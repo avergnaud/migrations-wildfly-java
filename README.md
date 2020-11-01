@@ -32,5 +32,18 @@ Java EE 8
 
 | Java EE       | JBoss EAP    | WildFly       |
 | ------------- | -------------| ------------- |
-| 7             | 7            | 8 à 13        |
+| 7             | 7.0 et 7.1   | 8 à 13        |
 | 8             | 7.2 et 7.3   | 14 à 21       |
+
+## Red Hat Application Migration Toolkit
+
+[https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/](https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/)
+
+Migration paths:
+[https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/html/getting_started_guide/supported_configurations](https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/html/getting_started_guide/supported_configurations)
+
+## LTS Java Oracle
+
+[https://www.oracle.com/java/technologies/java-se-support-roadmap.html](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
+
+## 
