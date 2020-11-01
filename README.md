@@ -6,11 +6,11 @@
 
 [https://docs.wildfly.org/13/Getting_Started_Guide.html](https://docs.wildfly.org/13/Getting_Started_Guide.html)
 
-31 mai 2018. 
+Mai 2018. 
 
 Releasé avant la LTS Java 11. A priori compatible Java 8, 9, 10.
 
-Java EE 7
+Java EE 7.
 
 ## Wildfly 15 ?
 
@@ -18,13 +18,13 @@ Java EE 7
 
 [https://docs.wildfly.org/15/Getting_Started_Guide.html](https://docs.wildfly.org/15/Getting_Started_Guide.html)
 
-30 novembre 2018.
+Décembre 2018.
 
 Première version compatible Java 11. Compatible Java 8, 9, 10, 11.
 
-Java EE 8
+Java EE 8.
 
-## Equivalences avec JBoss EAP et JEE
+## "Equivalences" avec JBoss EAP et JEE
 
 [http://www.mastertheboss.com/jboss-server/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as](http://www.mastertheboss.com/jboss-server/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as)
 
@@ -48,4 +48,16 @@ Migration paths:
 
 [https://www.oracle.com/java/technologies/java-se-support-roadmap.html](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
 
-## 
+## Migration Java
+
+Migrer une application de Java 8 à Java 11 n'impose pas de modulariser le code de l'application.
+
+Mais la JRE a été modularisée depuis Java 9. Par exemple [les classes de JAXB ont été déplacées dans un module](https://www.jesperdj.com/2018/09/30/jaxb-on-java-9-10-11-and-beyond/). Il y a donc des actions à mener pour les réinclure dans le(s) classpath(s).
+
+### migrer le code applicatif en modules
+
+
+
+
+
+
