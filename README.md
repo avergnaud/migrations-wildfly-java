@@ -50,14 +50,35 @@ Migration paths:
 
 ## Migration Java
 
-Migrer une application de Java 8 à Java 11 n'impose pas de modulariser le code de l'application.
+*Migrer une application de Java 8 à Java 11 n'impose pas de modulariser le code de l'application.*
 
 Mais la JRE a été modularisée depuis Java 9. Par exemple [les classes de JAXB ont été déplacées dans un module](https://www.jesperdj.com/2018/09/30/jaxb-on-java-9-10-11-and-beyond/). Il y a donc des actions à mener pour les réinclure dans le(s) classpath(s).
 
 ### migrer le code applicatif en modules
 
+Il faut définir le graphe des dépendences. Un projet qui n'a pas de dépendence est tout en bas du graphe.
 
+Si besoin, diviser un gros projet en modules, pour ensuite définir le graphe des dépendences.
 
+#### bottom-up
+
+1. Dans le graphes de dépendences, identifier le projet de plus bas niveau qui n'a pas encore été migré.
+2. Ajouter le module-info.java à ce projet. Penser aux exports et requires.
+3. Déplacer ce module du classpath au module path.
+
+A ce moment, tous les projets non migrés sont des *unnamed modules* dans le classpath. Tous les projets migrés sont des *named modules* dans le module path.
+
+4. Recommencer avec le projet suivant de plus bas niveau dans le graphe.
+
+#### top-down
+
+1. Placer tous les projets dans le module path.
+2. Dans le graphes de dépendences, identifier le projet de plus haut niveau qui n'a pas encore été migré.
+3. Ajouter le module-info.java à ce projet. Penser aux exports et requires.
+
+A ce moment, tous les projets non migrés sont des *automatic modules* dans le module path. Tous les projets migrés sont des *named modules* dans le module path.
+
+4. Recommencer avec le projet suivant de plus haut niveau dans le graphe.
 
 
 
