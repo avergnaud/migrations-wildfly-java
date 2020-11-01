@@ -42,6 +42,8 @@ Java EE 8
 Migration paths:
 [https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/html/getting_started_guide/supported_configurations](https://access.redhat.com/documentation/en-us/red_hat_application_migration_toolkit/4.2/html/getting_started_guide/supported_configurations)
 
+![Supported Source Platform Migration Paths](RHAMT_1.png)
+
 ## LTS Java Oracle
 
 [https://www.oracle.com/java/technologies/java-se-support-roadmap.html](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
