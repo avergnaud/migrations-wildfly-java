@@ -2,7 +2,15 @@
 
 [https://docs.wildfly.org/](https://docs.wildfly.org/)
 
-## WildFly 13 ?
+important : La couche persistence n'est pas mentionnée...
+
+## Existant
+
+Struts 1.1 / Tomcat 7.0 / Java 6
+
+(Servlet 3.0, Java EE 6)
+
+## Cible WildFly 13 ?
 
 [https://docs.wildfly.org/13/Getting_Started_Guide.html](https://docs.wildfly.org/13/Getting_Started_Guide.html)
 
@@ -12,7 +20,9 @@ Releasé avant la LTS Java 11. A priori compatible Java 8, 9, 10.
 
 Java EE 7.
 
-## Wildfly 15 ?
+Java 8 donc migration Struts 1.1 vers Spring MVC (Spring 5)
+
+## Cible Wildfly 15 ?
 
 [https://www.wildfly.org/news/2018/12/13/WildFly15-Final-Released/](https://www.wildfly.org/news/2018/12/13/WildFly15-Final-Released/)
 
@@ -24,7 +34,21 @@ Première version compatible Java 11. Compatible Java 8, 9, 10, 11.
 
 Java EE 8.
 
-## "Equivalences" avec JBoss EAP et JEE
+Java 11 donc migration Struts 1.1 vers Spring MVC (Spring 5)
+
+## Conclusion
+
+Pour éviter un trop grand gap :
+
+Migration Struts 1.1 / Tomcat 7.0 (Servlet 3.0, Java EE 6) / Java 6
+
+vers Spring 5 MVC / Wildfly 13 web profile (Servlet 3.1, Java EE 7) / Java 8
+
+Il faudra plus tard migrer vers Spring 5 MVC / Wildfly 21 web profile (Servlet 4.0, Java EE 8) / Java 11
+
+# Annexes
+
+## "Equivalences" Java EE JBoss EAP et WildFly
 
 [http://www.mastertheboss.com/jboss-server/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as](http://www.mastertheboss.com/jboss-server/jboss-eap/what-is-the-difference-between-jboss-eap-wildfly-and-jboss-as)
 
@@ -44,11 +68,13 @@ Migration paths:
 
 ![Supported Source Platform Migration Paths](RHAMT_1.png)
 
-## LTS Java Oracle
+## Support Java Oracle et OpenJDK
 
 [https://www.oracle.com/java/technologies/java-se-support-roadmap.html](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
 
-## Migration Java
+[https://access.redhat.com/articles/1299013](https://access.redhat.com/articles/1299013)
+
+## Migration Java > 8
 
 *Migrer une application de Java 8 à Java 11 n'impose pas de modulariser le code de l'application.*
 
