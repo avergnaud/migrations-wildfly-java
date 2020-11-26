@@ -6,7 +6,7 @@ important : La couche persistence n'est pas mentionnée...
 
 ## Existant
 
-Struts 1.1 / Tomcat 7.0 / Java 6
+Struts 1.1, Hibernate 3.6.10.Final / Tomcat 7.0 / Java 6
 
 (Servlet 3.0, Java EE 6)
 
@@ -22,6 +22,12 @@ Java EE 7.
 
 Java 8 donc migration Struts 1.1 vers Spring MVC (Spring 5)
 
+JPA 2.1, Hibernate 5.1.x
+
+[https://hibernate.org/orm/releases/5.1/](https://hibernate.org/orm/releases/5.1/)
+
+[https://github.com/hibernate/hibernate-orm/blob/5.1/migration-guide.adoc](https://github.com/hibernate/hibernate-orm/blob/5.1/migration-guide.adoc)
+
 ## Cible Wildfly 15 ?
 
 [https://www.wildfly.org/news/2018/12/13/WildFly15-Final-Released/](https://www.wildfly.org/news/2018/12/13/WildFly15-Final-Released/)
@@ -36,15 +42,21 @@ Java EE 8.
 
 Java 11 donc migration Struts 1.1 vers Spring MVC (Spring 5)
 
+JPA 2.2, Hibernate 5.4.x
+
+[https://hibernate.org/orm/releases/5.4/](https://hibernate.org/orm/releases/5.4/)
+
+[https://github.com/hibernate/hibernate-orm/blob/5.4/migration-guide.adoc](https://github.com/hibernate/hibernate-orm/blob/5.4/migration-guide.adoc)
+
 ## Conclusion
 
 Pour éviter un trop grand gap :
 
-Migration Struts 1.1 / Tomcat 7.0 (Servlet 3.0, Java EE 6) / Java 6
+Migration Struts 1.1, Hibernate 3.6.10 / Tomcat 7.0 (Servlet 3.0 - Java EE 6) / Java 6
 
-vers Spring 5 MVC / Wildfly 13 web profile (Servlet 3.1, Java EE 7) / Java 8
+vers Spring 5 MVC, Hibernate 5.1.x / Wildfly 13 (Servlet 3.1, JPA 2.1 - Java EE 7) / Java 8
 
-Il faudra plus tard migrer vers Spring 5 MVC / Wildfly 21 web profile (Servlet 4.0, Java EE 8) / Java 11
+Il faudra plus tard migrer vers Spring 5 MVC, Hibernate 5.4.x / Wildfly 21 (Servlet 4.0, JPA 2.2 - Java EE 8) / Java 11
 
 # Annexes
 
