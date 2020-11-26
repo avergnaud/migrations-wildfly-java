@@ -58,6 +58,14 @@ vers Spring 5 MVC, Hibernate 5.1.x / Wildfly 13 (Servlet 3.1, JPA 2.1 - Java EE 
 
 Il faudra plus tard migrer vers Spring 5 MVC, Hibernate 5.4.x / Wildfly 21 (Servlet 4.0, JPA 2.2 - Java EE 8) / Java 11
 
+## V2
+
+Pb existence applet + struts 1.1 :
+
+cible "ReactJS, RESTEasy", Hibernate 5.1.x / Wildfly 13 (JAX-RS 2.0, JPA 2.1 - Java EE 7) / Java 8
+
+cible suivante "ReactJS, RESTEasy", Hibernate 5.4.x / Wildfly 21 (JAX-RS 2.1, JPA 2.2 - Java EE 8) / Java 11
+
 # Annexes
 
 ## "Equivalences" Java EE JBoss EAP et WildFly
